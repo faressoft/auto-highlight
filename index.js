@@ -191,7 +191,6 @@ async function autoHighlight(element) {
       $(document).off('mousemove');
       $(this).off('dblclick');
       $('#highlighter-dot').remove();
-      hltr.destroy();
     });
   };
 
