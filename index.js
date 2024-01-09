@@ -197,3 +197,7 @@ async function autoHighlight(element) {
     $(element).textHighlighter();
   });
 }
+
+function destoryTextHighlighter(element) {
+  $(element).destoryTextHighlighter();
+}
