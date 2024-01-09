@@ -22,6 +22,8 @@ async function autoHighlight(element) {
 
     const colors = ['green', 'yellow', 'orange', 'blue', 'gray', 'red'];
 
+    $('#highlighter-dot').remove();
+
     return this.each(function () {
       function setColor(colorIndex) {
         currentColor = colors[colorIndex];
