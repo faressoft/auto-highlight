@@ -181,6 +181,18 @@ async function autoHighlight(element) {
     }
   };
 
+  $.fn.destoryTextHighlighter = function () {
+    return this.each(function () {
+      $(this).off('click', '.highlighted');
+      $(this).off('contextmenu', '.highlighted');
+      $(this).off('contextmenu');
+      $(document).off('mousemove');
+      $(this).off('dblclick');
+      $('#highlighter-dot').remove();
+      hltr.destroy();
+    });
+  };
+
   $(document).ready(function () {
     $(element).textHighlighter();
   });
