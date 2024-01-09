@@ -190,8 +190,9 @@ async function autoHighlight(element) {
       $(this).off('contextmenu');
       $(document).off('mousemove');
       $(this).off('dblclick');
-      $('#highlighter-dot').remove();
     });
+
+    $('#highlighter-dot').remove();
   };
 
   $(document).ready(function () {
